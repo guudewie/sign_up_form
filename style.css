@@ -3,18 +3,25 @@ body {
 
     margin: 0px;
     padding: 0px;
+    font-family: 'Hind', sans-serif;
 }
 
 .hero-container {
     height: 100vh;
-    width: 30vw;
+    width: 40vw;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+
+
+    background-image: url(./images/hero.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.hero-image {
-    width: auto;
-    height: 100%;
-}
 
 .form-container {
     display: flex;
@@ -24,6 +31,33 @@ body {
     padding: 1rem 3rem;
 
     height: 100vh;
-    background: rgba(201, 179, 17, 0.419);
-    box-shadow: -16px 0px 27px 20px rgba(0,0,0,0.2);
+    background: #fefef6;
+    box-shadow: -16px 0px 80px 20px rgba(0,0,0,0.1);
+}
+
+.hero-image-overlay {
+
+    width: 15vw;
+    margin-bottom: 23vh;
+}
+
+.hero-logo {
+    width: 100%;
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.sub-heading {
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-wrap: wrap;
 }
