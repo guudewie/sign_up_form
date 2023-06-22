@@ -1,3 +1,5 @@
+
+
 body {
     display: flex;
 
@@ -13,7 +15,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px;
 
 
     background-image: url(./images/hero.svg);
@@ -28,7 +29,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     flex: 1;
-    padding: 1rem 3rem;
+    padding: 0rem 3rem;
 
     height: 100vh;
     background: #fefef6;
@@ -45,6 +46,10 @@ body {
     width: 100%;
 }
 
+.hero-logo::after {
+    width: 90%;
+}
+
 .heading {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -59,5 +64,61 @@ body {
 
 #sign-up-form {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#sign-up-form > div {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-submit {
+    border: none;
+    appearance: none;
+
+    height: 3rem;
+    width: 13rem;
+    background-color: #0a5c58;
+    color: #fefef6;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 12px;
+}
+
+.log-in {
+    font-size: 13px;
+}
+
+.input-container {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: -1.2rem;
+    left: 0.1rem;
+    font-size: 14px;
+}
+
+label:hover {
+    position: absolute;
+    top: -1.2rem;
+    left: 0.1rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    height: 1.4rem;
+    width: 15.5rem;
+    flex: 1;
+    border: 1px solid rgba(0, 0, 0, 0.209);
+    border-radius: 5px;
 }
