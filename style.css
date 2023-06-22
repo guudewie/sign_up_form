@@ -1,0 +1,29 @@
+body {
+    display: flex;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-container {
+    height: 100vh;
+    width: 30vw;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: auto;
+    height: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    padding: 1rem 3rem;
+
+    height: 100vh;
+    background: rgba(201, 179, 17, 0.419);
+    box-shadow: -16px 0px 27px 20px rgba(0,0,0,0.2);
+}
