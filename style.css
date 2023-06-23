@@ -27,7 +27,7 @@ body {
 .form-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 4vw;
     flex: 1;
     padding: 0rem 3rem;
 
@@ -44,22 +44,19 @@ body {
 
 .hero-logo {
     width: 100%;
-}
-
-.hero-logo::after {
-    width: 90%;
+    min-width: 8rem;
 }
 
 .heading {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: max(1.9rem, 3.5vw);
 }
 
 .sub-heading {
     font-family: 'Hind', sans-serif;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: max(1rem, 1.5vw);
 }
 
 #sign-up-form {
@@ -71,6 +68,7 @@ body {
 #sign-up-form > div {
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .form-submit {
@@ -146,3 +144,4 @@ input:focus {
 .log-in.link:hover {
     text-decoration: none;
 }
+
