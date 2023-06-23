@@ -83,7 +83,13 @@ body {
     color: #fefef6;
     border-radius: 10px;
     font-size: 1rem;
+    transition: .3s ease-in-out;
 }
+
+.form-submit:hover {
+    transform: scale(1.05);
+}
+
 
 .submit-container {
     display: flex;
@@ -104,15 +110,19 @@ label {
     position: absolute;
     top: -1.2rem;
     left: 0.1rem;
-    font-size: 14px;
+    font-size: .85rem;
+    font-weight: 400;
 }
 
-label:hover {
+
+.error-password::after{
+    content: "Passwords do not match!";
     position: absolute;
-    top: -1.2rem;
-    left: 0.1rem;
-    font-size: 14px;
-    font-weight: 600;
+    top: 3rem;
+    left: 0rem;
+    color: rgb(208, 0, 0);
+    font-size: .7rem;
+    white-space: nowrap;
 }
 
 input {
@@ -121,4 +131,18 @@ input {
     flex: 1;
     border: 1px solid rgba(0, 0, 0, 0.209);
     border-radius: 5px;
+}
+
+input:hover,
+input:focus {
+    box-shadow: 0px 0px 4px 0px rgba(37, 62, 27, 0.2);
+}
+
+.log-in.link {
+    appearance: none;
+    color: #0a5c58;
+}
+
+.log-in.link:hover {
+    text-decoration: none;
 }
